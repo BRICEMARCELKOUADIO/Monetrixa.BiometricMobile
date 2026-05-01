@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Monetrixa.BiometricMobile.Application\Monetrixa.BiometricMobile.Application.csproj" />
+    <ProjectReference Include="..\Monetrixa.BiometricMobile.Domain\Monetrixa.BiometricMobile.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
