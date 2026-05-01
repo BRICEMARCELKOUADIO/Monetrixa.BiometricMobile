@@ -6,4 +6,19 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+  <!--<attr
+  path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b']/field[@name='ara_b']"
+  name="managedName">AraBValue</attr>
+  <remove-node
+     path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b.ara_b']" />
+  <attr path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b.ara_b']"
+          name="managedName">AraBInfo</attr>
+  <attr
+   path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b.ara_b']"
+   name="managedName">AraBInfo</attr>
+  <remove-node
+    path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b']/field[@name='ara_b']" />-->
+
+  <remove-node
+    path="/api/package[@name='cn.com.ara.trustface.sdk.util']/class[@name='ara_b.ara_b']" />
 </metadata>

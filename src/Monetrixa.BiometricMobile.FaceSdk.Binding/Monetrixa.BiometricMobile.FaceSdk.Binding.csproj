@@ -14,4 +14,7 @@
       To learn more, see: https://learn.microsoft.com/dotnet/maui/migration/android-binding-projects
     -->
   </PropertyGroup>
+  <ItemGroup>
+    <AndroidLibrary Include="Jars\ARA_TrustFaceSDK_CPUArm64_V4.3.4_release_20250703163358.aar" />
+  </ItemGroup>
 </Project>
