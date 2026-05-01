@@ -31,3 +31,15 @@ Points identifiés :
 - Stockage sécurisé des templates biométriques.
 - Chiffrement.
 - Suppression des données biométriques.
+
+## Validation architecture MAUI
+
+La première version de l’application MAUI a été lancée avec succès.
+
+Les tests mock suivants fonctionnent :
+
+- Enrôlement Face ID
+- Enrôlement Fingerprint
+- Enrôlement Face ID + Fingerprint
+
+Cette étape valide la structure App / Application / Domain / Infrastructure ainsi que l’orchestration biométrique via `IBiometricOrchestrator`.

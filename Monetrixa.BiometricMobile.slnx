@@ -9,6 +9,7 @@
     <Project Path="src/Monetrixa.BiometricMobile.App/Monetrixa.BiometricMobile.App.csproj" />
     <Project Path="src/Monetrixa.BiometricMobile.Application/Monetrixa.BiometricMobile.Application.csproj" />
     <Project Path="src/Monetrixa.BiometricMobile.Domain/Monetrixa.BiometricMobile.Domain.csproj" />
+    <Project Path="src/Monetrixa.BiometricMobile.FaceSdk.Binding/Monetrixa.BiometricMobile.FaceSdk.Binding.csproj" />
     <Project Path="src/Monetrixa.BiometricMobile.Infrastructure/Monetrixa.BiometricMobile.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">

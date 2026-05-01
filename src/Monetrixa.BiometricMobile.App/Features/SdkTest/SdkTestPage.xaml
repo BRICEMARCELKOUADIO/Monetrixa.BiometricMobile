@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Monetrixa.BiometricMobile.App.Features.SdkTest.SdkTestPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="{Binding Title}"
+    BindingContext="{Binding SdkTestViewModel, Source={StaticResource ViewModelLocator}}">
+
+  <ScrollView>
+    <VerticalStackLayout Padding="24" Spacing="16">
+
+      <Label
+          Text="Monetrixa Biometric SDK Test"
+          FontSize="22"
+          FontAttributes="Bold" />
+
+      <Label
+          Text="Tests mock avant intégration des vrais SDK Face ID et Fingerprint."
+          FontSize="14" />
+
+      <Button
+          Text="Tester enrôlement Face ID"
+          Command="{Binding TestFaceEnrollmentCommand}"
+          IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}" />
+
+      <Button
+          Text="Tester enrôlement Fingerprint"
+          Command="{Binding TestFingerprintEnrollmentCommand}"
+          IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}" />
+
+      <Button
+          Text="Tester enrôlement Face ID + Fingerprint"
+          Command="{Binding TestFullEnrollmentCommand}"
+          IsEnabled="{Binding IsBusy, Converter={StaticResource InverseBoolConverter}}" />
+
+      <ActivityIndicator
+          IsRunning="{Binding IsBusy}"
+          IsVisible="{Binding IsBusy}" />
+
+      <Label
+          Text="{Binding StatusMessage}"
+          FontSize="15"
+          FontAttributes="Bold" />
+
+      <CollectionView ItemsSource="{Binding Results}">
+        <CollectionView.ItemTemplate>
+          <DataTemplate>
+            <Border Padding="12" Margin="0,4">
+              <Label Text="{Binding .}" FontSize="13" />
+            </Border>
+          </DataTemplate>
+        </CollectionView.ItemTemplate>
+      </CollectionView>
+
+    </VerticalStackLayout>
+  </ScrollView>
+</ContentPage>

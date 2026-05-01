@@ -73,6 +73,24 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Monetrixa.BiometricMobile.Application\Monetrixa.BiometricMobile.Application.csproj" />
 	  <ProjectReference Include="..\Monetrixa.BiometricMobile.Domain\Monetrixa.BiometricMobile.Domain.csproj" />
+	  <ProjectReference Include="..\Monetrixa.BiometricMobile.Infrastructure\Monetrixa.BiometricMobile.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Common\Controls\" />
+	  <Folder Include="Common\Behaviors\" />
+	  <Folder Include="Features\Dashboard\" />
+	  <Folder Include="Features\Enrollment\" />
+	  <Folder Include="Features\Customers\" />
+	  <Folder Include="Features\Verification\" />
+	  <Folder Include="Services\Navigation\" />
+	  <Folder Include="Services\Dialogs\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Features\SdkTest\SdkTestPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
